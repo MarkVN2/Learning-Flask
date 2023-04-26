@@ -13,3 +13,6 @@ A simple overlay toggle on and off button using request.
 ## On terminal 
     pip install -r requirements.txt
 
+> After installation
+
+    flask run

@@ -8,3 +8,6 @@ Experiment using forms to get numbers adding them up and showing the result of t
 ## On terminal 
     pip install -r requirements.txt
 
+> After installation
+
+    flask run

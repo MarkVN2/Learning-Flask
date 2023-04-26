@@ -9,3 +9,6 @@ Experiments with generating graphs using Python Libraries like Numpy and Matplot
 ## On terminal 
     pip install -r requirements.txt
 
+> After installation
+
+    flask run
