@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/overlay.css') }}">
 </head>
 <body>
-    
+    <div id="overlay" style="color: red;{{ display }}">
+        <form action="" method="post">
+            <button name="activate" value="off">OFF</button>
+        </form> 
+        <p >"OVERLAY"</p> 
+        </div>
     <form action="" method="post">
         <button name="activate" value="on">ON</button>
     </form>
-    <form action="" method="post">
-        <button name="activate" value="off"></button>
-    </form> 
-    <div style="color: red;{{ display }}">
-    <p >"OVERLAY"</p> </div>
+   
+    
 </body>
 </html>

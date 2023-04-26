@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
-#TODO make the README.md for this exercise for better explanation
-
 @app.route("/", methods =["GET", "POST"])
 def index():
     if request.method == "POST":
