@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+
+body{
+    display: grid;
+    place-items: center;
+    font-family: 'PT Sans Narrow', sans-serif;   
+}
+p{
+font-size: 2rem;
+}
+
+.header{
+    
+}
+.text-container{
+
+}
+
+.graph-container{
+
+}
+.form-container{
+    font-family: 'PT Sans Narrow', sans-serif; 
+    display: flex;
+}

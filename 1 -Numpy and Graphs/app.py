@@ -6,7 +6,14 @@ app = Flask(__name__)
 
 @app.route("/", methods =["GET", "POST"])
 def index():
+    
+        # render the page if no POST is requested
+        return render_template("index.html")
+
+@app.route("/graph" , methods =["GET", "POST"])
+def graph():
     if request.method == "POST":
+        #This could be done much more efficiently
         
         eixox1 = request.form.get("eixox1")
         eixoy1 = request.form.get("eixoy1")
@@ -31,10 +38,9 @@ def index():
         plt.savefig('static\images\graph.png')
 
         # if POST is requested render the page and return the graph directory as a variable
-        return render_template("index.html", img = '/static/images/graph.png')
+        return render_template("graph.html", img = '/static/images/graph.png')
     else:
-        # render the page if no POST is requested
-        return render_template("index.html")
-
+        return render_template("graph.html")
+        
 if __name__=='__main__':
     app.run()
