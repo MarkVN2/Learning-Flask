@@ -5,23 +5,20 @@
 body{
     display: grid;
     place-items: center;
-    font-family: 'PT Sans Narrow', sans-serif;   
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    
 }
 p{
 font-size: 2rem;
 }
-
-.header{
-    
+#topsvg{
+    width: 100vw;
+    pointer-events: none;
 }
-.text-container{
-
-}
-
-.graph-container{
-
-}
-.form-container{
-    font-family: 'PT Sans Narrow', sans-serif; 
-    display: flex;
-}
+#bottomsvg {
+    width: 100vw;
+    transform: scaleY(-1);
+    pointer-events: none;
+  }

@@ -10,39 +10,47 @@
 </head>
 
 <body>
+    <img src="../static/images/topwave.svg" id="topsvg">
     <h1>Graphs with Python</h1>
     <div class="text-container">
         <p>This is a site page done to demonstrate a graph using <b><i>MatplotLib and Flask</b></i></p>
     </div>
-    <div class="graph-container">
-        <iframe name="graph" href="/graph" id="graph" width="100%" height="100%" ></iframe>
-    </div>
+        <iframe name="graph" src="/graph" style="width: 50vw;height:50vh" ></iframe>
         <h1>Points of the Graph</h1>
     <div class="form-container">
-        <form target="graph" style="display: flex;">
-
-        <div>
-            <h2>Point 1</h2>
-            
-        </div>
-
-        <div>
-            <h2>Point 2</h2>
-
-        </div>
-
-        <div>
-            <h2>Point 3</h2>
-
-        </div>
-
+        <form target="/" style="display: flex;" method="post">
+        <table>
+            <tr>
+                <th></th>
+                <th>  Point 1 </th>
+                <th>  Point 2 </th>
+                <th>  Point 3 </th>
+            </tr>
+            <tr>
+                <td><b>X</b></td>
+                <td><input type="number" name="x1" ></td>
+                <td><input type="number" name="x2"></td>
+                <td><input type="number" name="x3"></td>
+            </tr>
+            <tr>
+                <td><b>Y</b></td>
+                <td><input type="number" name="y1"></td>
+                <td><input type="number" name="y2"></td>
+                <td><input type="number" name="y3"></td>
+            </tr>
+            <tr>
+                <td><b>Z</b></td>
+                <td><input type="number" name="z1"></td>
+                <td><input type="number" name="z2"></td>
+                <td><input type="number" name="z3"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
     </form> 
 
     </div>
-    
-
-
-    
+    <img src="../static/images/bottomwave.svg" id="bottomsvg">
+  
     
 </body>
 
