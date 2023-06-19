@@ -8,14 +8,23 @@
 </head>
 <body>
     <form  method="post">
-        <label for="a">A:</label>
-        <input type="number" id="a" name="a" value="{{ nome }}">
-        <br>
-        <label for="b">B:</label>
-        <input type="number" id="b" name="b">
-        <input type="submit" value="Enviar" >
+        <table>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th></th>
+                <th>RESULT</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="a" name="a" value="{{ nome }}"></td>
+                <td><input type="number" id="b" name="b"></td>
+                <td>  <input type="submit" value="Enviar" ></td>
+                <td>{{ c }}</td>
+            </tr>
+        </table>
+      
     
-    <p style="color: red;">{{ c }}</p>
+    
 
 </body>
 </html>

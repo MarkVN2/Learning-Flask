@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/", methods =["GET", "POST"])
 def index():
-    if request.method == "POST":
+    if request.method == "POST" :
         try:
             # grab A and B from the page
             a = int(request.form.get("a"))
